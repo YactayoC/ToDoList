@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="header__heading">To-Do List</h2>
+    </header>
+    <main class="main contenedor">
+        <div class="main__grid">
+            <form id="dataInput">
+                <div class="main__addcontent">
+                    <input class="main__field" type="text" placeholder="Agrega tus tareas pendiendes...">
+                </div>
+            </form>
+            <div class="main__content">
+                <ul class="main__list">
+                </ul>
+            </div>
+            <div class="main__options">
+                <label class="main__options-items"></label>
+                <div class="main__options-buttons">
+                    <button class="main__options-b option--active" data-filter="all">All</button>
+                    <button class="main__options-b" data-filter="active">Active</button>
+                    <button class="main__options-b" data-filter="completed">Completed</button>
+                </div>
+            
+                <button class="main__options-clear">Clear All</button>
+            </div>
+        </div>
+        <div class="main__message">
+            No se admiten campos vacios
+        </div>
+        
+    </main>
+    <footer class="footer contenedor">
+        <p class="footer__copyright">&copy; Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/optionTask.js"></script>
+    <script src="js/optionButton.js"></script>
+</body>
+
+</html>
