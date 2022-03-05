@@ -48,7 +48,6 @@ a {
 }
 
 /* Main */
-/* Campos de entrada */
 .main__grid {
     margin-top: -15rem;
     display: flex;
@@ -76,7 +75,7 @@ a {
     }
 }
 
-/* Lista */
+/* List */
 .main__content {
     display:grid;
     background-color: #fff;

@@ -10,6 +10,7 @@ const count = document.querySelector('.main__options-items');
 
 divContent.classList.add('d-none');
 message.classList.add('d-none');
+
 let tasks = [];
 
 eventListeners();
